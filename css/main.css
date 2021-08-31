@@ -1,0 +1,174 @@
+/* Estilos Generales */
+hr {
+  opacity: 1;
+  margin: 0px;
+  height: 15px !important;
+  background: #ba5b02;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#181818), to(#BA8B02));
+  background: linear-gradient(to left, #181818, #BA8B02);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.spacerMain {
+  opacity: 0.5;
+  margin-top: 1rem;
+  height: 15px !important;
+  background: #CE6605;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#18181810), to(#CE6605));
+  background: linear-gradient(to left, #18181810, #CE6605);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Estilo de Fuente */
+.mainTitle {
+  font-family: 'Big Shoulders Text', cursive, sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  color: goldenrod;
+}
+
+.itemTitle {
+  font-family: 'Big Shoulders Text', cursive, sans-serif;
+  font-weight: 600;
+  font-size: 1.563rem;
+  color: #ef7f02;
+}
+
+p {
+  font-family: 'Big Shoulders Text', cursive, sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: mintcream;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* BEM */
+/* Header+Nav */
+.topNav {
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Big Shoulders Text', cursive, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/*Estilo de Main*/
+.backImg {
+  /* Fondo del Main */
+  background-image: url("../media/Hierogold.jpg");
+  height: auto;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+}
+
+/*Grid*/
+.prodMain {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.prodMain__Item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: rgba(40, 38, 40, 0.5);
+}
+
+.accsMain {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.accsMain__Item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: rgba(40, 38, 40, 0.5);
+}
+
+.accsMain__Item img {
+  max-width: 290px;
+}
+
+/*Noticias-Unboxings*/
+.vidMain {
+  margin-top: 1.5rem;
+  text-align: center;
+  background-color: rgba(40, 38, 40, 0.5);
+}
+
+/*Condicion Cartas*/
+.cardBkg {
+  margin-top: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(40, 38, 40, 0.7);
+}
+
+/*Estilo Footer*/
+.footStyle {
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Media Queries */
+/* Mobile S - Tablet */
+@media screen and (max-width: 992px) {
+  .prodMain {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .cardBkg {
+    text-align: center;
+  }
+}

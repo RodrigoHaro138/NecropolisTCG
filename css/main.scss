@@ -1,0 +1,91 @@
+@import "./partials/estilosGen";
+@import "./partials/variables";
+@import "./partials/tipografia";
+
+/* CSS Reset */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+/* BEM */
+/* Header+Nav */
+.topNav{
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Big Shoulders Text', cursive, sans-serif; 
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/*Estilo de Main*/
+.backImg{ /* Fondo del Main */
+    background-image: url("../media/Hierogold.jpg");
+    height: auto;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Grid*/
+.prodMain{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    
+    &__Item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(40, 38, 40, 0.5);
+    }
+}
+
+.accsMain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    
+    &__Item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(40, 38, 40, 0.5);
+    }
+    &__Item img{max-width: 290px;}
+}
+
+/*Noticias-Unboxings*/
+.vidMain{
+    margin-top: 1.5rem;
+    text-align: center;
+    background-color: rgba(40, 38, 40, 0.5);
+}
+
+/*Condicion Cartas*/
+.cardBkg{
+    margin-top: 1.2rem;
+    align-items: center;
+    background-color: rgba(40, 38, 40, 0.7);
+}
+
+/*Estilo Footer*/
+.footStyle{
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Media Queries */
+/* Mobile S - Tablet */
+@media screen and (max-width: 992px){
+    .prodMain{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardBkg{
+        text-align: center;
+    }
+}
